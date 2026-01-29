@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #5C4033 !important;
+    width: 100%;
+}
+
+
+.navbar a {
+    color: #F3E9DC;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.conteiner{
+    height: 110px;
+    margin: 0 50px
+}
+
+.logo{
+    height: 250px;
+    width: auto;
+    max-height: 100%;
+    display: block;
+}
+
+.logo:hover {
+    animation: scala-logo 0.45s ease-in-out both;
+}
+
+@keyframes scala-logo {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}
