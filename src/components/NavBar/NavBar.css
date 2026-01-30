@@ -13,9 +13,9 @@
     align-items: center;
 }
 
-.conteiner{
+.container{
     height: 110px;
-    margin: 0 50px
+    margin: 0 30px !important
 }
 
 .logo{

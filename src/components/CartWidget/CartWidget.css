@@ -1,0 +1,39 @@
+
+.CartWidget {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #916C5A;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color:#FFE6BC;
+}
+
+.CartWidget svg{
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+}
+
+.CartWidget:hover {
+    background-color: #7c5949;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #000000;
+    color: #000000;
+}
+
+
+.CartWidget:active {
+    transform: scale(0.97);
+}
+
+.cart-label {
+    font-size: 15px;
+    font-weight: 500;
+    color:#F8B259;
+}
