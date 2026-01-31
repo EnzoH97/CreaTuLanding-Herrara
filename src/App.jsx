@@ -1,11 +1,12 @@
 import './App.css'
 import ColorSchemesExample from './components/NavBar/NavBar/'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 function App() {
   return (
       <div>
         <ColorSchemesExample />
-        hola mundo
+        <ItemListContainer label={'Bienvenidos a la taza de la abuela'}  />
       </div>
   )
 }

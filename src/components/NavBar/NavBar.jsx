@@ -1,4 +1,3 @@
-
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
@@ -14,13 +13,13 @@ function ColorSchemesExample() {
             <Container className='container'>
                 <Navbar.Brand>
                     <Logo  className='logo'/>
-                    <CartWidget label={'1'}/>
                 </Navbar.Brand>
                 <Nav className="me-auto">
                     <Nav.Link href="#promos">Promos</Nav.Link>
                     <Nav.Link href="#bebidas">Bebidas</Nav.Link>
                     <Nav.Link href="#panaderia">Panaderia</Nav.Link>
                 </Nav>
+                <CartWidget label={'1'}/>
             </Container>
         </Navbar>
     </>

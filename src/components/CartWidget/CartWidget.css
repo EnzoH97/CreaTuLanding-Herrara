@@ -22,14 +22,8 @@
 
 .CartWidget:hover {
     background-color: #7c5949;
-    transform: scale(1.05);
     box-shadow: 0 0 5px #000000;
     color: #000000;
-}
-
-
-.CartWidget:active {
-    transform: scale(0.97);
 }
 
 .cart-label {
