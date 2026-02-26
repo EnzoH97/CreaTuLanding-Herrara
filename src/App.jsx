@@ -1,11 +1,11 @@
 import './App.css'
-import ColorSchemesExample from './components/NavBar/NavBar/'
+import BasicExample from './components/NavBar/NavBar/'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 function App() {
   return (
       <div>
-        <ColorSchemesExample />
+        <BasicExample />
         <ItemListContainer />
       </div>
   )
