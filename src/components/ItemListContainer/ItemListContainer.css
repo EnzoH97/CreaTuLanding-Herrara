@@ -1,6 +1,133 @@
-
-h2{
-    text-align: center;
-    color: #D96F32;
-    padding: 50px;
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: none;
+    justify-content: center;
+    align-items: none;
+    gap: none;
 }
+
+.card {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    gap: none;
+    background-color: #FFE6BC;
+    width: 15.625rem;
+    height: 21.875rem;
+    margin: 3.125rem;
+    padding: 0.8rem;
+    box-shadow: 0 0.25rem 0.5rem #5C4033;
+    border-radius: 0.75rem;
+    animation: scala-card 0.6s ease-in-out both;
+}
+
+@keyframes scala-card {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.card-img {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-img img {
+    width: 90%;
+    height: 9.375rem;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.info-card {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: none;
+    gap: none;
+    flex: 1;
+}
+
+.info-card h2 {
+    color: #5C4033;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.625rem 0;
+    margin: 0.625rem 0;
+    line-height: 0;
+}
+
+.info-card p {
+    color: #5C4033;
+    padding: 0.625rem 0.3125rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-card {
+    color: #D96F32;
+    border-top: 0.0625rem solid #D96F32;
+    display: flex;
+    flex-wrap: none;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: none;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 0.625rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.footer-card p {
+    padding-top: 0.625rem;
+}
+
+/* 
+svg {
+    width: 2.1875rem;
+    height: 2.1875rem;
+}
+
+.card-button {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    margin-top: 0.3125rem;
+}
+
+.card-button svg {
+    border: 2px solid #5C4033;
+    display: flex;
+    padding: 0.3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s all ease-in-out;
+}
+
+.card-button svg:hover {
+    border: 2px solid #F8B259;
+    background-color: #F8B259;
+}
+*/

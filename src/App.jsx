@@ -6,7 +6,7 @@ function App() {
   return (
       <div>
         <ColorSchemesExample />
-        <ItemListContainer label={'Bienvenidos a la taza de la abuela'}  />
+        <ItemListContainer />
       </div>
   )
 }
