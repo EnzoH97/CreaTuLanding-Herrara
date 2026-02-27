@@ -1,11 +1,11 @@
-import './ItemListContainer.css'
-import Item from './Item'
+
+import ItemWithLowStock from './ItemWithLowStock';
 
 
 function ItemList({ items }){
     return(
     <div className="contenedor-cards">
-        {items.map(item => <Item item={item} key={item.id}/>)}
+        {items.map(item => <ItemWithLowStock item={item} key={item.id}/>)}
     </div>
     )
 }

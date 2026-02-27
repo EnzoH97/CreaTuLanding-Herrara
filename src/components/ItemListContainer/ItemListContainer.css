@@ -7,7 +7,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #FFE6BC;
+    background-color: #FFD7A3;
     width: 16.875rem;
     height: 22.5rem;
     margin: 3.125rem;
@@ -15,6 +15,11 @@
     box-shadow: 0 .25rem .5rem #5C4033;
     border-radius: .75rem;
     animation: scala-card 0.6s ease-in-out both;
+}
+
+.low-stock .card{
+    opacity: 0.7;
+    background-color: #FFE6BC;
 }
 
 @keyframes scala-card {
