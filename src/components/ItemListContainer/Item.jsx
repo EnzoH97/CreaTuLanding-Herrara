@@ -5,16 +5,17 @@ function Item({ item }){
             <div className="card">
 
                 <div className="card-img">
-                    {/* <img src="" alt={item.nombre} /> */}
+                    { <img src={item.thumbnail} alt={item.title} /> }
                 </div>
 
                 <div className="info-card">
-                    <h2>{item.nombre}</h2>
-                    <p>{item.descripcion}</p>
+                    <h2>{item.title}</h2>
+                    <p>{item.description}</p>
+                    <p>stock: {item.stock}</p>
                 </div>
 
                 <div className="footer-card">
-                    <p>${item.precio}</p>
+                    <p>${item.price}</p>
                 </div>
 
             </div>
