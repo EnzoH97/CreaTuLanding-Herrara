@@ -6,7 +6,8 @@ import './NavBar.css'
 import Logo from '../../assets/logo.svg'
 import CartWidget from '../CartWidget/CartWidget'
 
-function BasicExample() {
+
+function NavBar({ categories }) {
     return (
     <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
@@ -16,14 +17,18 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="Categorias" id="basic-nav-dropdown">
+                <div className="dropdown-categorias">
+                    {categories.map(cat => <NavDropdown.Item key={cat}>{cat}</NavDropdown.Item>)}
+                </div>
             </NavDropdown>
             </Nav>
         </Navbar.Collapse>
-        <CartWidget label={'1'}/>
+        <CartWidget label={'0'}/>
         </Container>
     </Navbar>
     );
 }
 
-export default BasicExample;
+export default NavBar;
+
