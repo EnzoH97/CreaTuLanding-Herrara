@@ -16,6 +16,9 @@ function Item({ item }){
 
                 <div className="footer-card">
                     <p>${item.price}</p>
+                    <div className='card-button'>
+                        <button>ver más</button>
+                    </div>
                 </div>
 
             </div>
@@ -23,3 +26,4 @@ function Item({ item }){
 }
 
 export default Item;
+

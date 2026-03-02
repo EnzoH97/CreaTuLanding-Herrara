@@ -1,12 +1,10 @@
 import './App.css'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import NavBarContainer from './components/NavBar/NavBarContainer'
+import AppRouter from './router/AppRouter'
 
 function App() {
   return (
       <div>
-        <NavBarContainer />
-        <ItemListContainer />
+        <AppRouter />
       </div>
   )
 }

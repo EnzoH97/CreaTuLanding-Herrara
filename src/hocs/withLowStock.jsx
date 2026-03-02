@@ -2,7 +2,6 @@ import '../components/ItemListContainer/ItemListContainer.css'
 
 const withLowStock = (Component) => {
     function ComponentWithLowSotck(props){
-        console.log(props.item.stock)
 
         const lowStock = props.item.stock < 20;
 

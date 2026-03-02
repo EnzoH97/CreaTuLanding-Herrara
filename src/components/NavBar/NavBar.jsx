@@ -5,13 +5,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import './NavBar.css'
 import Logo from '../../assets/logo.svg'
 import CartWidget from '../CartWidget/CartWidget'
+import { Link } from 'react-router';
 
 
 function NavBar({ categories }) {
     return (
     <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/">
             <img src={Logo}  className='logo'/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -19,7 +20,7 @@ function NavBar({ categories }) {
             <Nav className="me-auto">
             <NavDropdown title="Categorias" id="basic-nav-dropdown">
                 <div className="dropdown-categorias">
-                    {categories.map(cat => <NavDropdown.Item key={cat}>{cat}</NavDropdown.Item>)}
+                    {categories.map(cat => (<NavDropdown.Item as={Link} to={`/category/${cat}`} key={cat}>{cat}</NavDropdown.Item>))}
                 </div>
             </NavDropdown>
             </Nav>
