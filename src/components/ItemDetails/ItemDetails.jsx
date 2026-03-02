@@ -1,4 +1,5 @@
 import './ItemDetails.css'
+import ItemCount from '../ItemCount/ItemCount'
 
 function ItemDetailCard({ item }) {
     return (
@@ -26,7 +27,7 @@ function ItemDetailCard({ item }) {
             </h3>
 
             <div className="item-detail-counter">
-                {}
+                <ItemCount />
             </div>
 
             <button className="item-detail-btn">
