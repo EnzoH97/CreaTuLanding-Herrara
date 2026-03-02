@@ -1,0 +1,27 @@
+import { useState, useEffect } from "react";
+import { useParams } from "react-router";
+import ItemDetailCard from "./ItemDetails";
+import Cargando from "../Spiner";
+
+function ItemDetailContainer() {
+        const [item, setItems] = useState()
+        const {id} =useParams()
+
+        useEffect(() => {
+            fetch(`https://dummyjson.com/products/${id}`)
+                .then(res => res.json())
+                .then(data => setItems(data))
+        }, [id])
+
+        if(!item){
+            return(
+                <Cargando />
+            )
+        }
+
+    return(
+        <ItemDetailCard item={item} />
+    )
+}
+
+export default ItemDetailContainer;

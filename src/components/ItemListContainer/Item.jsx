@@ -1,6 +1,8 @@
-
+import { useNavigate } from "react-router";
 
 function Item({ item }){
+    const navigate = useNavigate()
+
     return(
             <div className="card">
 
@@ -17,7 +19,7 @@ function Item({ item }){
                 <div className="footer-card">
                     <p>${item.price}</p>
                     <div className='card-button'>
-                        <button>ver más</button>
+                        <button onClick={()=> navigate(`/item/${item.id}`)}>ver más</button>
                     </div>
                 </div>
 

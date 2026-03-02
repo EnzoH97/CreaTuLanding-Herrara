@@ -1,0 +1,47 @@
+.item-detail {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.item-detail-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-detail-title {
+    margin: 15px 0 10px;
+}
+
+.item-detail-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.item-detail-price {
+    margin: 15px 0;
+    color: #111;
+}
+
+.item-detail-counter {
+    margin-bottom: 15px;
+}
+
+.item-detail-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.item-detail-btn:hover {
+    background-color: #333;
+}
