@@ -1,7 +1,7 @@
 import '../components/ItemListContainer/ItemListContainer.css'
 
 const withLowStock = (Component) => {
-    function ComponentWithLowSotck(props){
+    function ComponentWithLowStock(props){
 
         const lowStock = props.item.stock < 20;
 
@@ -11,7 +11,7 @@ const withLowStock = (Component) => {
         </div>
         )
     }
-    return ComponentWithLowSotck
+    return ComponentWithLowStock
 }
 
 export default withLowStock;

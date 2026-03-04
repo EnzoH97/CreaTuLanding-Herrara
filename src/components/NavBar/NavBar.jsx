@@ -7,7 +7,6 @@ import Logo from '../../assets/logo.svg'
 import CartWidget from '../CartWidget/CartWidget'
 import { Link } from 'react-router';
 
-
 function NavBar({ categories }) {
     return (
     <Navbar expand="lg" className="bg-body-tertiary">

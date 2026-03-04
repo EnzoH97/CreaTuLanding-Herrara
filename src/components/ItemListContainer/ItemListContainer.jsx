@@ -8,10 +8,11 @@ function ItemListContainer() {
     const {categoryName} = useParams()
 
     useEffect(() => {
-        const url = 'https://dummyjson.com/products?limit=40';
-        const urlCat = `https://dummyjson.com/products/category/${categoryName}`;
 
-    fetch(categoryName ? urlCat : url)
+        const UrlBase = 'https://dummyjson.com/products';
+        const UrlFinal = categoryName ? `${UrlBase}/category/${categoryName}` : `${UrlBase}?limit=40`;
+
+    fetch(UrlFinal)
         .then(res => res.json())
         .then(data => setItems(data.products))
 

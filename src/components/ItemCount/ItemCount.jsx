@@ -5,7 +5,7 @@ function ItemCount() {
     const [count, setCount] = useState(1)
 
     const sumar = () => setCount(count + 1)
-    const restar = () => setCount(count > 0 ? count - 1 : 0)
+    const restar = () => setCount(count > 1 ? count - 1 : 1)
 
 
     return(

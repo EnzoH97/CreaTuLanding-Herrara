@@ -1,7 +1,7 @@
 
 
 
-function NotFount(){
+function NotFound(){
     return(
         <div>
             <h2>
@@ -11,4 +11,4 @@ function NotFount(){
     )
 }
 
-export default NotFount;
+export default NotFound;
