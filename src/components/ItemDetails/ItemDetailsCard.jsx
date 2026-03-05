@@ -14,7 +14,7 @@ function ItemDetailCard({ item }) {
             <h3 className="item-detail-price"> ${item.price} </h3>
 
             <div className="item-detail-counter">
-                <ItemCount />
+                <ItemCount stock={item.stock} />
             </div>
 
             <button className="item-detail-btn">

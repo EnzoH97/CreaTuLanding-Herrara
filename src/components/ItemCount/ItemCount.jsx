@@ -1,18 +1,25 @@
 import { useState } from "react"
-import './ItemCount.css'
+import AddButton from "../Buttons/AddButton"
+import SubtractButton from "../Buttons/SubtractButton"
 
-function ItemCount() {
-    const [count, setCount] = useState(1)
 
-    const sumar = () => setCount(count + 1)
-    const restar = () => setCount(count > 1 ? count - 1 : 1)
 
+function ItemCount({ stock }) { 
+    const [count, setCount] = useState(1);
+
+    const sumar = () => {
+        if (count < stock) setCount(count + 1);
+    };
+    
+    const restar = () => {
+        if (count > 1) setCount(count - 1);
+    };
 
     return(
         <div className='item-botones'>
             <p> {count} </p>
-            <button className='sumar-item' onClick={sumar} > + </button>
-            <button className='restar-item' onClick={restar} > - </button>
+            <AddButton sumar={sumar} />
+            <SubtractButton restar={restar} />
         </div>
     )
     

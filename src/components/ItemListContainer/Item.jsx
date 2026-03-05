@@ -3,9 +3,10 @@ import { useNavigate } from "react-router";
 function Item({ item }){
     const navigate = useNavigate()
 
-    return(
-            <div className="card">
+    const isLowStock = item.stock < 20;
 
+    return(
+        <div className={`card ${isLowStock ? "low-stock" : ""}`}>
                 <div className="card-img">
                     { <img src={item.thumbnail} alt={item.title} /> }
                 </div>
@@ -22,8 +23,7 @@ function Item({ item }){
                         <button onClick={()=> navigate(`/item/${item.id}`)}>ver más</button>
                     </div>
                 </div>
-
-            </div>
+        </div>
     )
 }
 
