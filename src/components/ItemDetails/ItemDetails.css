@@ -31,17 +31,3 @@
 .item-detail-counter {
     margin-bottom: 15px;
 }
-
-.item-detail-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.item-detail-btn:hover {
-    background-color: #333;
-}

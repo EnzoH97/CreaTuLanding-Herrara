@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router";
+import './ItemListContainer.css'
 
 function Item({ item }){
     const navigate = useNavigate()

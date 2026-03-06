@@ -1,9 +1,12 @@
 import './CartWidget.css'
 import { Link } from 'react-router';
-
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
 function  CartWidget({label}) {
+    const context = useContext(CartContext)
 
-    /* navegacion del Cart pendiente */
+    console.log(context)
+
     return(
         <>
         <Link  className="CartWidget">

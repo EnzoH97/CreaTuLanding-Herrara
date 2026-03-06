@@ -1,7 +1,11 @@
 import './ItemDetails.css'
 import ItemCount from '../ItemCount/ItemCount'
+import { useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
 
 function ItemDetailCard({ item }) {
+    const { AddItem } = useContext(CartContext);
+
     return (
         <div className="item-detail">
             <img src={item.thumbnail} alt={item.title} className="item-detail-img"/>
@@ -14,12 +18,8 @@ function ItemDetailCard({ item }) {
             <h3 className="item-detail-price"> ${item.price} </h3>
 
             <div className="item-detail-counter">
-                <ItemCount stock={item.stock} />
+                <ItemCount stock={item.stock} item={item} />
             </div>
-
-            <button className="item-detail-btn">
-                Agregar al carrito
-            </button>
 
         </div>
     )

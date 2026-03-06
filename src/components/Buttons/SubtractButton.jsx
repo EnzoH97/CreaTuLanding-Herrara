@@ -1,4 +1,4 @@
-import './Buttonstyles.css'
+import './ButtonStyles.css'
 
 function SubtractButton({ restar }){
     return(
