@@ -24,8 +24,10 @@ function ItemCount({ stock, item }) {
     return(
         <div className='item-botones'>
             <p> {count} </p>
-            <AddButton sumar={sumar} />
-            <SubtractButton restar={restar} />
+            <div className="btnContainer">
+                <AddButton sumar={sumar} />
+                <SubtractButton restar={restar} />
+            </div>
             <AddToCart  handleOnAdd={handleOnAdd} />
         </div>
     )

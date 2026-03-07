@@ -31,12 +31,12 @@
 }
 
 .container{
-    height: 110px;
-    margin: 0 30px !important
+    height: auto;
+    margin: 0 30px;
 }
 
 .logo{
-    height: 250px;
+    height: 175px;
     width: auto;
     max-height: 100%;
     display: block;

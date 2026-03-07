@@ -18,9 +18,14 @@ function CartProvider({ children }){
         }
         
     }
+
+    const getQuantity = () =>{
+        const total = cart.reduce((acc, current) => acc + current.count, 0)
+        return total
+    }
     
     return(
-        <CartContext.Provider value={{ cart, addItem }}>
+        <CartContext.Provider value={{ cart, addItem, getQuantity }}>
             {children}
         </CartContext.Provider>
     )
