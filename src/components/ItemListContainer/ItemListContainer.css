@@ -17,11 +17,6 @@
     animation: scala-card 0.6s ease-in-out both;
 }
 
-.low-stock{
-    opacity: 0.7;
-    background-color: #FFE6BC;
-}
-
 @keyframes scala-card {
     0% {
         transform: scale(1);
