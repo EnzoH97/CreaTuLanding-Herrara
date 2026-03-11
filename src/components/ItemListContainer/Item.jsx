@@ -15,7 +15,6 @@ function Item({ item }){
                 <div className='info-card'>
                     <h2>{item.title}</h2>
                     <p>{item.description}</p>
-                    <p>stock: {item.stock}</p>
                 </div>
 
                 <div className='footer-card'>

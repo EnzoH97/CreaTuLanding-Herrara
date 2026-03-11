@@ -13,7 +13,6 @@ function ItemDetailCard({ item }) {
             <h2 className="item-detail-title"> {item.title} </h2>
 
             <p className="item-detail-description"> {item.description} </p>
-            <p className="item-detail-description"> stock: {item.stock} </p>
 
             <h3 className="item-detail-price"> ${item.price} </h3>
 

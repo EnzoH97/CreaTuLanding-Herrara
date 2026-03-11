@@ -5,12 +5,12 @@ import AddToCart from "../Buttons/AddToCart";
 import { CartContext } from "../../context/CartContext";
 
 
-function ItemCount({ stock, item }) { 
+function ItemCount({ item }) { 
     const { addItem } = useContext(CartContext);
     const [count, setCount] = useState(1);
 
     const sumar = () => {
-        if (count < stock) setCount(count + 1);
+        setCount(count + 1);
     };
     
     const restar = () => {
