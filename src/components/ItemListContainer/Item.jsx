@@ -4,8 +4,6 @@ import './ItemListContainer.css'
 function Item({ item }){
     const navigate = useNavigate()
 
-    const isLowStock = item.stock < 20;
-
     return(
         <div className= 'card'>
                 <div className='card-img'>
