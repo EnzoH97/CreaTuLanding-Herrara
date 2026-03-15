@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import './CartContainer.css'
 
 function CartContainer() {
-    const { cart, removeItem } = useContext(CartContext)
+    const { cart, removeItem, getTotal} = useContext(CartContext)
     const navigate = useNavigate()
     return(
     <div className='caja-carrito'>
@@ -30,7 +30,7 @@ function CartContainer() {
             <div>
                 <div className="total-pagar">
                     <span>Total:</span>
-                    <span>${cart.reduce((acc, item) => acc + (item.price * item.count), 0).toFixed(2)}</span>
+                    <span>$ {getTotal()}</span>
                 </div>
                 <button className='btn-finalizar' onClick={()=> navigate(`/checkout`)}>
                 Iniciar compra
