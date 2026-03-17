@@ -1,5 +1,6 @@
 import { doc, getDoc, getFirestore, collection, getDocs, query, where, addDoc  } from "firebase/firestore"
 import { app } from "./configuration";
+import toast from "react-hot-toast";
 
 const db = getFirestore(app);
 
@@ -48,15 +49,18 @@ export const getProduct = async(id) => {
     console.log("Document data:", docSnap.data());
     return{...docSnap.data(), id: docSnap.id}
     } else {
-    // docSnap.data() will be undefined in this case
+
         console.log("No such document!");
     }
 }
 
-export const createOrder = async(order) => {
-    
+export const createOrder = async(order, clearCart, navigate) => {
+
     const docRef = await addDoc(collection(db, "orders"), order);
-    console.log("Document written with ID: ", docRef.id);
+    toast(`Muchas gracias ${order.user.name} por tu compra, el ID de tu compra es: ${docRef.id}`)
+    
+    clearCart()
+    navigate('/')
 } 
 
 

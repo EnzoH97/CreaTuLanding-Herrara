@@ -3,6 +3,7 @@ import AddButton from "../Buttons/AddButton"
 import SubtractButton from "../Buttons/SubtractButton"
 import AddToCart from "../Buttons/AddToCart";
 import { CartContext } from "../../context/CartContext";
+import toast from "react-hot-toast";
 
 
 function ItemCount({ item }) { 
@@ -19,6 +20,7 @@ function ItemCount({ item }) {
 
     const handleOnAdd = () => {
         addItem({ ...item, count });
+        toast.success('Se agrego el producto al carrito')
     };
 
     return(

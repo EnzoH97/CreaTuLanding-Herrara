@@ -1,30 +1,8 @@
 import './Checkout.css'
-import { useContext } from 'react';
-import { CartContext } from '../../context/CartContext';
-import { serverTimestamp } from 'firebase/firestore';
-import { createOrder } from '../../firebase/database';
 
 
-function CheckoutContainer(){
-    const { cart, getTotal } = useContext(CartContext)
 
-    const handleSubmit = (e) => {
-    e.preventDefault()
-
-    const form = e.target
-    const name = form.nombre.value
-    const email = form.email.value
-    const address = form.direccion.value
-    const phone = form.telefono.value
-
-    createOrder({
-        user : {name, email, address, phone},
-        items : cart,
-        total : getTotal(),
-        time : serverTimestamp()
-    })
-
-}
+function Checkout({ handleSubmit }){
     return(
         <div className='contenedor-form'>
             <form onSubmit={handleSubmit}>
@@ -47,4 +25,4 @@ function CheckoutContainer(){
     )
 }
 
-export default CheckoutContainer;
+export default Checkout;

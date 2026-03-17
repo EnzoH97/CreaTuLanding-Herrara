@@ -4,7 +4,8 @@ import NavBarContainer from "../components/NavBar/NavBarContainer";
 import ItemDetailContainer from "../components/ItemDetails/ItemDetailContainer";
 import NotFount from "../components/NotFound";
 import CartContainer from "../components/CartContainer/CartContainer";
-import CheckoutContainer from "../components/Checkout/checkout";
+import CheckoutContainer from "../components/Checkout/CheckoutContainer";
+import { Toaster } from "react-hot-toast";
 
 function AppRouter(){
     return(
@@ -18,6 +19,10 @@ function AppRouter(){
                 <Route path="/checkout" element={<CheckoutContainer />} />
                 <Route path="*" element={<NotFount/>} />
             </Routes>
+            <Toaster 
+                position="top-right"
+                reverseOrder={false}
+            />
         </BrowserRouter>
     )
 }
