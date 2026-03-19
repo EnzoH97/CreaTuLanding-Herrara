@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import ItemCart from "./ItemCart";
 
 function CartContainer() {
-    const { cart, removeItem, getTotal } = useContext(CartContext);
+    const { cart, removeItem, getTotal, clearCart } = useContext(CartContext);
     const navigate = useNavigate();
 
     const handleCheckout = () => {
@@ -17,6 +17,7 @@ function CartContainer() {
         removeItem={removeItem} 
         getTotal={getTotal} 
         onCheckout={handleCheckout} 
+        clearCart={clearCart}
     />
     );
 }
