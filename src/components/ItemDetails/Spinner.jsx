@@ -1,5 +1,5 @@
 import Spinner from 'react-bootstrap/Spinner';
-
+import './ItemDetailsStyles.css'
 
 function Cargando() {
     return (

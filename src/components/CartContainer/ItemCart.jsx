@@ -1,4 +1,4 @@
-
+import './ItemCart.css'
 import toast from 'react-hot-toast';
 
 
@@ -14,7 +14,7 @@ function ItemCart({ cart, removeItem, getTotal, onCheckout, clearCart }) {
     }
 
     return (
-    <div className='caja-carrito'>
+    <div className="caja-carrito">
         <h2>Tu compra</h2>
         <ul className='lista-compra'>
             {cart.map(el => (

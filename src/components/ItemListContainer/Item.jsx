@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router";
+import './ItemStyles.css'
 
 
 function Item({ item }){

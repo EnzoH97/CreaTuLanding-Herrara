@@ -1,4 +1,4 @@
-
+import './ButtonsStyles.css'
 
 function AddToCart({ handleOnAdd }){
 

@@ -1,7 +1,7 @@
-
 import ItemCount from '../ItemCount/ItemCount'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
+import './ItemDetailsStyles.css'
 
 function ItemDetailCard({ item }) {
     const { AddItem } = useContext(CartContext);
