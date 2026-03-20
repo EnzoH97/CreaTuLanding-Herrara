@@ -46,3 +46,17 @@
         transform: scale(1.25);
     }
 }
+
+
+.dropdown-item:active {
+    background-color: #6f4e37 !important;
+}
+
+.dropdown-item:focus {
+    background-color: #8d6e63 !important;
+    box-shadow: none !important; 
+}
+
+.dropdown-item.active {
+    background-color: #5d4037 !important; 
+}

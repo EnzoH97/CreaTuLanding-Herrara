@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import './NavBarStyles.css'
 import Logo from '../../assets/logo.svg'
 import CartWidget from '../CartWidget/CartWidget'
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 function NavBar({ categories }) {
     return (
@@ -19,12 +19,19 @@ function NavBar({ categories }) {
             <Nav className="me-auto">
             <NavDropdown title="Categorias" id="basic-nav-dropdown">
                 <div className="dropdown-categorias">
-                    {categories.map(cat => (<NavDropdown.Item as={Link} to={`/category/${cat}`} key={cat}>{cat}</NavDropdown.Item>))}
+                    {categories.map(cat => (
+                        <NavDropdown.Item 
+                        as={NavLink} 
+                        to={`/category/${cat}`} 
+                        key={cat}
+                        className= {({ isActive }) => isActive ? "active" : " "}>
+                            {cat}
+                            </NavDropdown.Item>))}
                 </div>
             </NavDropdown>
             </Nav>
         </Navbar.Collapse>
-        <CartWidget label={'0'}/>
+        <CartWidget />
         </Container>
     </Navbar>
     );
