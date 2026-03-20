@@ -1,0 +1,46 @@
+.sumar-item,
+.restar-item {
+    cursor: pointer;
+    
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #F3E9DC;
+    background-color: #D96F32;
+    border: 2px solid #5C4033;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    margin: 0 0.3rem;
+
+    transition: all 0.2s ease;
+}
+
+.sumar-item:active,
+.restar-item:active{
+    background-color: #C3542B;
+}
+
+
+
+.item-detail-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #F8B259;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.item-detail-btn:hover {
+    background-color: #D96F32;
+}

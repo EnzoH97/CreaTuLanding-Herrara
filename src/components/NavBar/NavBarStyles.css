@@ -1,0 +1,48 @@
+.NavBar {
+    background-color: #5C4033 !important;
+    width: 100%;
+}
+
+.dropdown-menu{
+    background-color: #fcedd2;
+    --bs-dropdown-link-hover-bg: #916C5A;
+}
+
+.navbar a {
+    color: #F3E9DC;
+}
+
+.dropdown-categorias a{
+    color: #C3542B;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    height: auto;
+    margin: 0 30px;
+}
+
+.logo{
+    height: 175px;
+    width: auto;
+    max-height: 100%;
+    display: block;
+}
+
+.logo:hover {
+    animation: scala-logo 0.45s ease-in-out both;
+}
+
+@keyframes scala-logo {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}
