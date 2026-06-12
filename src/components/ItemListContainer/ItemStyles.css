@@ -52,7 +52,7 @@
 }
 
 .info-card h2 {
-    color: #C3542B;
+    color: #5C4033;
     font-size: 1.2rem;
     line-height: 1.4;
     font-weight: 500;
@@ -80,7 +80,7 @@
 }
 
 .footer-card {
-    color: #D96F32;
+    color: #5C4033;
     border-top: .0625rem solid #D96F32;
     display: flex;
     justify-content: space-between;
