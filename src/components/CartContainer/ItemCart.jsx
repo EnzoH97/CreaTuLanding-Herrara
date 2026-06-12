@@ -1,8 +1,9 @@
 import './ItemCart.css'
 import toast from 'react-hot-toast';
+import ItemCountCart from '../ItemCount/ItemCoutCart';
 
 
-function ItemCart({ cart, removeItem, getTotal, onCheckout, clearCart }) {
+function ItemCart({ cart, removeItem, getTotal, onCheckout, clearCart}) {
 
     const handleClearCart = () => {
         const confirmacion = window.confirm("¿Vaciar todo el carrito?");
@@ -33,6 +34,7 @@ function ItemCart({ cart, removeItem, getTotal, onCheckout, clearCart }) {
                     >
                         🗑️
                     </button>
+                    <ItemCountCart item={el}/>
                 </div>
             </li>
         ))}

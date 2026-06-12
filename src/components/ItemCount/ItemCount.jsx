@@ -27,8 +27,8 @@ function ItemCount({ item }) {
         <div className='item-botones'>
             <p> {count} </p>
             <div className="btnContainer">
-                <AddButton sumar={sumar} />
                 <SubtractButton restar={restar} />
+                <AddButton sumar={sumar} />
             </div>
             <AddToCart  handleOnAdd={handleOnAdd} />
         </div>

@@ -42,17 +42,15 @@ return products
 
 
 export const getProduct = async(id) => {
-    const docRef = doc(db, "products", id)
-    const docSnap = await getDoc(docRef)
+    const docRef = doc(db, "products", id);
+    const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
-    console.log("Document data:", docSnap.data());
-    return{...docSnap.data(), id: docSnap.id}
+        return { ...docSnap.data(), id: docSnap.id };
     } else {
-
-        console.log("No such document!");
+        return null; // Retornamos null para manejar el error en el componente que lo llama
     }
-}
+};
 
 export const createOrder = async(order, clearCart, navigate) => {
 
