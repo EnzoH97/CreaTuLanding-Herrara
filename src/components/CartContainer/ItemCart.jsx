@@ -6,7 +6,7 @@ import ItemCountCart from '../ItemCount/ItemCoutCart';
 function ItemCart({ cart, removeItem, getTotal, onCheckout, clearCart}) {
 
     const handleClearCart = () => {
-        const confirmacion = window.confirm("¿Vaciar todo el carrito?");
+        const confirmacion = globalThis.confirm("¿Vaciar todo el carrito?");
         
         if (confirmacion) {
             clearCart();

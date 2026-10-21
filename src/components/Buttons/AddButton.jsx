@@ -3,9 +3,7 @@ import './ButtonsStyles.css'
 function AddButton({ sumar }){
 
     return(
-        <>
         <button className='sumar-item' onClick={sumar} > + </button>
-        </>
     )
 }
 

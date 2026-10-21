@@ -32,8 +32,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
@@ -93,10 +91,9 @@
 }
 
 .footer-card p {
-    padding-top: .375rem;
     font-size: 1.0625rem;
     margin-bottom: .5rem;
-    padding-top: 0
+    padding-top: 0;
 }
 
 .card-button{
