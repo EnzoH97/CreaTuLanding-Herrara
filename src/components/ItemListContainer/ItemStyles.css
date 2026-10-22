@@ -117,3 +117,10 @@
     background-color: #D96F32;
     color: #000000;
 }
+
+@media (max-width: 575.98px) {
+    .card {
+        width: min(100% - 2rem, 20rem);
+        margin: 1rem 0;
+    }
+}

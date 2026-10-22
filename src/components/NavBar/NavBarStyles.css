@@ -60,3 +60,19 @@
 .dropdown-item.active {
     background-color: #5d4037 !important; 
 }
+
+@media (max-width: 991.98px) {
+    .logo {
+        height: 100px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        margin: 0 12px;
+    }
+
+    .logo {
+        height: 72px;
+    }
+}

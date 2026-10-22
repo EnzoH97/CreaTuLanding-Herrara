@@ -52,3 +52,9 @@
 .spinner-border{
     color: #C3542B;
 }
+
+@media (max-width: 440px) {
+    .item-detail {
+        margin: 1.5rem 1rem;
+    }
+}

@@ -17,7 +17,7 @@ function ItemCountCart({ item }){
         
         const restar = () => {
             const nuevoContador = count -1;
-            if (count == 0 ) {
+            if (count <= 1) {
                 removeItem(item.id)
                 toast.error("Producto eliminado del carrito");
             }else{

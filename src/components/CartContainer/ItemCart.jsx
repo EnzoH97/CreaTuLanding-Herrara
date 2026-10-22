@@ -23,7 +23,7 @@ function ItemCart({ cart, removeItem, getTotal, onCheckout, clearCart}) {
                 <img src={el.thumbnail} alt={el.title} />
                 <div className='item-info'>
                     <div className='item-detalles'>
-                        <p className='item-nombre'>{el.nombre}</p>
+                        <p className='item-nombre'>{el.title}</p>
                         <p className='item-cantidad'>Cantidad: {el.count}</p>
                     </div>
                     <p className='item-precio'> ${el.price * el.count}</p>
