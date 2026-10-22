@@ -5,7 +5,7 @@ import ItemDetailContainer from "../components/ItemDetails/ItemDetailContainer";
 import NotFount from "../components/NotFound";
 import CartContainer from "../components/CartContainer/CartContainer";
 import CheckoutContainer from "../components/Checkout/CheckoutContainer";
-import OrderConfirmationContainer from "../components/OrderConfirmation/OrderConfirmationContainer"
+import OrderConfirmationContainer from "../components/OrderConfirmation/OrderConfirmationContainer";
 import { Toaster } from "react-hot-toast";
 
 function AppRouter(){
