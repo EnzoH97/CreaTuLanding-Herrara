@@ -1,0 +1,79 @@
+.confirmacion {
+    width: min(100% - 2rem, 36rem);
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #916C5A;
+    border-radius: 10px;
+    background-color: #F3E9DC;
+    box-shadow: 0 8px 20px #000010;
+    color: #5C4033;
+    text-align: center;
+}
+
+.confirmacion h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.confirmacion h3 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 .5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #916C5A;
+}
+
+.confirmacion-pedido {
+    margin-bottom: .25rem;
+    overflow-wrap: anywhere;
+}
+
+.confirmacion-nota {
+    margin: 0;
+    font-size: .9rem;
+}
+
+.confirmacion-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.confirmacion-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid #D9C7B0;
+}
+
+.confirmacion-total {
+    display: flex;
+    justify-content: space-between;
+    margin: .75rem 0 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.confirmacion-datos {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.confirmacion-boton {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .75rem 1.5rem;
+    min-height: 44px;
+    background-color: #5C4033;
+    color: #F3E9DC;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.confirmacion-boton:hover,
+.confirmacion-boton:focus-visible {
+    background-color: #3B2A20;
+    color: #F3E9DC;
+}

@@ -53,12 +53,35 @@ export const getProduct = async(id) => {
 };
 
 export const createOrder = async(order, clearCart, navigate) => {
+    try {
+        const docRef = await addDoc(collection(db, "orders"), order);
 
-    const docRef = await addDoc(collection(db, "orders"), order);
-    toast(`Muchas gracias ${order.user.name} por tu compra, el ID de tu compra es: ${docRef.id}`)
-    
-    clearCart()
-    navigate('/')
-} 
+        // Resumen para la pantalla de confirmación (sin el serverTimestamp, que es solo un marcador)
+        const summary = {
+            id: docRef.id,
+            user: order.user,
+            items: order.items,
+            total: order.total,
+            createdAt: new Date().toISOString()
+        }
+
+        clearCart()
+        navigate(`/order/${docRef.id}`, { replace: true, state: { order: summary } })
+    } catch (error) {
+        console.error(error)
+        toast.error("No pudimos registrar tu compra. Intentá de nuevo en unos minutos.")
+    }
+}
+
+export const getOrder = async(id) => {
+    const docSnap = await getDoc(doc(db, "orders", id));
+
+    if (!docSnap.exists()) {
+        return null;
+    }
+
+    const data = docSnap.data()
+    return { ...data, id: docSnap.id, createdAt: data.time?.toDate().toISOString() ?? null }
+}
 
 

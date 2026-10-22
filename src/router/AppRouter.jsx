@@ -5,6 +5,7 @@ import ItemDetailContainer from "../components/ItemDetails/ItemDetailContainer";
 import NotFount from "../components/NotFound";
 import CartContainer from "../components/CartContainer/CartContainer";
 import CheckoutContainer from "../components/Checkout/CheckoutContainer";
+import OrderConfirmationContainer from "../components/OrderConfirmation/OrderConfirmationContainer"
 import { Toaster } from "react-hot-toast";
 
 function AppRouter(){
@@ -17,6 +18,7 @@ function AppRouter(){
                 <Route path="/cart" element={<CartContainer />} />
                 <Route path="/category/:categoryName" element={<ItemListContainer />} />
                 <Route path="/checkout" element={<CheckoutContainer />} />
+                <Route path="/order/:id" element={<OrderConfirmationContainer />} />
                 <Route path="*" element={<NotFount/>} />
             </Routes>
             <Toaster 
