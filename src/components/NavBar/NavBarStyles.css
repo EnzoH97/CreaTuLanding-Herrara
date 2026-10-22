@@ -61,9 +61,37 @@
     background-color: #5d4037 !important; 
 }
 
+.nav-acciones {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    border-color: #F3E9DC;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-collapse {
+    padding-bottom: .5rem;
+}
+
+@media (min-width: 992px) {
+    .nav-acciones {
+        order: 3;
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 991.98px) {
     .logo {
-        height: 100px;
+        width: 160px;
+        height: 60px;
+        object-fit: cover;
     }
 }
 
@@ -73,6 +101,7 @@
     }
 
     .logo {
-        height: 72px;
+        width: 130px;
+        height: 50px;
     }
 }

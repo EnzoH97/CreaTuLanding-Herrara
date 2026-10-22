@@ -14,7 +14,10 @@ function NavBar({ categories }) {
         <Navbar.Brand as={Link} to="/">
             <img src={Logo} alt='Logo de la tienda, ir al inicio' className='logo'/>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <div className="nav-acciones">
+            <CartWidget />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        </div>
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
             <NavDropdown title="Categorias" id="basic-nav-dropdown">
@@ -31,7 +34,6 @@ function NavBar({ categories }) {
             </NavDropdown>
             </Nav>
         </Navbar.Collapse>
-        <CartWidget />
         </Container>
     </Navbar>
     );
