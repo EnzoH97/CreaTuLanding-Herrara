@@ -19,7 +19,7 @@ function ItemCountCart({ item }){
             const nuevoContador = count -1;
             if (count <= 1) {
                 removeItem(item.id)
-                toast.error("Producto eliminado del carrito");
+                toast.error("Producto eliminado del carrito", { id: "carrito-eliminado" });
             }else{
                 setCount(nuevoContador);
                 updateQuantity(item.id, nuevoContador);

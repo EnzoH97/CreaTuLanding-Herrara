@@ -22,8 +22,12 @@ function AppRouter(){
                 <Route path="*" element={<NotFount/>} />
             </Routes>
             <Toaster 
-                position="top-right"
+                position="bottom-center"
                 reverseOrder={false}
+                toastOptions={{
+                    duration: 2000,
+                    error: { duration: 3500 },
+                }}
             />
         </BrowserRouter>
     )

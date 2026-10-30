@@ -10,7 +10,7 @@ function ItemCart({ cart, removeItem, getTotal, onCheckout, clearCart}) {
         
         if (confirmacion) {
             clearCart();
-            toast.success("Carrito vaciado correctamente");
+            toast.success("Carrito vaciado correctamente", { id: "carrito-vaciado" });
         }
     }
 
