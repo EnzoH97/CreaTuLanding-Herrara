@@ -5,7 +5,7 @@ function NotFound(){
     return(
         <div>
             <h2>
-                Error al econtrar la pagina, por favor compruevela de nuevo
+                Error al encontrar la página, por favor compruébela de nuevo
             </h2>
         </div>
     )
