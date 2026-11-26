@@ -105,3 +105,12 @@ npm install
 ```bash
 npm run dev
 ```
+
+
+## 🧪 Decisión de diseño: botón "ver más" en las tarjetas
+
+En la devolución del Parcial 2 se propuso reemplazar el botón "ver más" de cada tarjeta por un botón de carrito menos, un número y un botón de carrito más. Para decidir, se armó una versión con esa propuesta y se hizo un test A/B con varias personas, comparando ambas versiones.
+
+**Resultado:** a la mayoría de las personas les gustó más la versión original, con el botón "ver más", y casi todas coincidieron en el motivo: permite acceder fácilmente al detalle del producto y conocerlo mejor antes de decidir la compra.
+
+**Decisión:** se conserva el botón "ver más". La cantidad de unidades se sigue eligiendo en la vista de detalle del producto, donde el usuario ya tiene toda la información a la vista. Con los carritos menos y más en la tarjeta, además, el acceso al detalle dejaba de ser tan directo.
